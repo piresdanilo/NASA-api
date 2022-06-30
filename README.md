@@ -1,0 +1,2 @@
+# NASA-api
+'This website uses the JavaScript Fetch method to connect with APOD API from <a href="https://api.nasa.gov/" target="_blank">NASA</a> and return the image of that day, along with the image title and description.'

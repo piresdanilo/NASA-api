@@ -1,0 +1,79 @@
+
+body {
+    /* background-color: rgba(196, 196, 196, 0.377); */
+    font: normal 15pt;
+    font-family: 'Trispace', sans-serif;
+    background-image: url('img/NGC5775_NraoEnglish_6067.jpg');
+    background-repeat: repeat;
+    background-size: cover;
+}
+header {
+    color: cornsilk;
+    text-align: center;
+    font-size: 10pt;
+    padding-top: 10px;
+}
+h1 {
+    font-family: 'Staatliches', cursive;
+    font-size: 25pt;
+    letter-spacing: 0.1em;
+}
+section {
+    background-color: rgba(255, 248, 220, 0.062);
+    color: cornsilk;
+    text-align: center;
+    min-height: 250px;
+    border-radius: 5px;
+    padding: 0px 15px;
+    max-width: 800px;
+    margin: 20px auto;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.356);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+a {
+    color: rgb(255, 255, 255);
+}
+a:hover{
+    color: grey;
+}
+
+#instruction {
+    font-size: 12pt;
+    letter-spacing: -2px;
+}
+
+input{
+    width: 40px;
+    height: 20px;
+    margin: 5px 10px 5px 0px;
+}
+
+
+#inputYear {
+    width: 90px;
+}
+
+#mainButton {
+    width: 150px;
+    height: 27px;
+    border: 2px solid;
+    border-radius: 3px;
+    margin-left: 0px;
+    background-color: rgb(236, 236, 125);
+}
+#mainButton:hover {
+    background-color: aliceblue;
+}
+
+#image {
+    max-width: 100%;
+}
+
+footer {
+    color: cornsilk;
+    text-align: center;
+    font-style: italic;
+    font-size: 12pt;
+}

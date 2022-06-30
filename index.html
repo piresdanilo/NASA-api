@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+    <title>NASA API</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Staatliches&family=Trispace&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section>
+        <div>
+            <h1>NASA - Astronomy Picture of the Day</h1>
+            <p id="instruction">Insert a date below and see the astronomy picture of this day:</p>
+            <input type="number" id="inputDay" placeholder="D" min="1" max="31">
+            <input type="number" id="inputMonth" placeholder="M" min="1" max="12">
+            <input type="number" id="inputYear" placeholder="Y" min="1996">
+
+            <input type="button" value="See Image" id="mainButton">
+                        
+        </div>
+        <div>
+            <p id="toBeFilled"></p>
+        </div>
+        <br>
+        <div id="containerNewInfo">
+            <img id="image">
+            <h3 id="imageTitle"></h3>
+            <p id="imageExplanation"></p>
+        </div>
+        <a href="#footer" id="link">About this Website</a>
+        <p id="aboutThis"></p>
+        <a href="" target="_blank"></a>
+    </section>
+    <footer>
+        <p>&copy;Danilo Pires Lucio</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
