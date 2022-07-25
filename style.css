@@ -33,7 +33,7 @@ section {
     justify-content: space-between;
 }
 a {
-    color: rgb(255, 255, 255);
+    color: #9884A1;
 }
 a:hover{
     color: grey;
@@ -49,10 +49,8 @@ input{
     height: 20px;
     margin: 5px 10px 5px 0px;
 }
-
-
-#inputYear {
-    width: 90px;
+#inputDate{
+    width: 130px;
 }
 
 #mainButton {
@@ -61,7 +59,7 @@ input{
     border: 2px solid;
     border-radius: 3px;
     margin-left: 0px;
-    background-color: rgb(236, 236, 125);
+    background-color: #9884A1;
 }
 #mainButton:hover {
     background-color: aliceblue;

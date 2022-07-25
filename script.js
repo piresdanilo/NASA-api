@@ -2,9 +2,7 @@
 const apiUrl = 'https://api.nasa.gov/planetary/apod?';
 const apiKey = 'api_key=euBoeTcP81SdVRxfcbjbD3gPtpXukMIBla6Uox9i'
 let currentDate;
-let getDay = document.querySelector('#inputDay');
-let getMonth = document.querySelector('#inputMonth');
-let getYear = document.querySelector('#inputYear');
+let date = document.querySelector('#inputDate')
 const mainButton = document.querySelector('#mainButton');
 let toBeFilled = document.querySelector('#toBeFilled')
 
@@ -17,13 +15,10 @@ let newParagraph = document.createElement('p');
 mainButton.addEventListener('click', getImage);
 
 function getImage(){
-    let day = getDay.value;
-    let month = getMonth.value;
-    let year = getYear.value;
-    currentDate = `${year}-${month}-${day}`;
-    let apiDate = `&date=${currentDate}`
+    let apiDate = `&date=${date.value}`
     let completeUrl = `${apiUrl}${apiKey}${apiDate}`
     // console.log(completeUrl);
+
 
     fetch(completeUrl)
     .then((response) => response.json())
@@ -33,7 +28,11 @@ function getImage(){
         getExplanation = data.explanation;
         
         if (data.code) {
-            toBeFilled.innerHTML = 'ERROR! Please insert a valid data.'
+            toBeFilled.innerHTML = 'ERROR! Please insert a valid data. <br>The minimum search date is 6/16/1995 and the maximum is today. '
+            imageTitle.innerHTML = ''
+            newParagraph.innerHTML = '';
+            imageExplanation.removeChild(newParagraph);
+            image.setAttribute('src', '')
         } else {
             toBeFilled.innerHTML = ''
             imageTitle.innerHTML = `Title: ${getTitle}`
